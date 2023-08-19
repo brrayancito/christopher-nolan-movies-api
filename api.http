@@ -5,11 +5,7 @@ GET http://localhost:5000/movies
 GET http://localhost:5000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 
 ### Get movies by genre
-GET http://localhost:5000/movies?genre=Adventure
-
-
-
-
+GET http://localhost:5000/movies?genre=Action
 
 ### Create a movie
 POST http://localhost:5000/movies
@@ -25,10 +21,20 @@ Content-Type: application/json
     "rate": 8.7
 }
 
+### Delete movie by ID
+DELETE  http://localhost:5000/movies/1519b896-4a2c-4d46-beca-78e595c070f6
+Content-Type: application/json
+
+
+
 ### Update movie by ID
-PATCH http://localhost:5000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:5000/movies/cf247152-1f24-4011-9486-d39fe5bc5b99
 Content-Type: application/json
 
 {
-    "year": 2023
+    "genre": [
+        "Drama",
+        "Thriller",
+        "Action"
+]
 }
