@@ -1,7 +1,10 @@
 import Express from 'express'
 import cors from 'cors'
+import 'dotenv/config'
 
 import moviesRouter from './routes/movie.routes.js'
+import connectDB from './database/mongodb/connectdb.js'
+
 const App = Express()
 App.use(Express.json())
 App.disable('x-powered-by')
@@ -32,8 +35,14 @@ App.get('/', (req, res) => {
 
 App.use('/movies', moviesRouter)
 
-const PORT = process.env.PORT ?? 5000
+async function startServer () {
+  const PORT = process.env.PORT || 8080
+  try {
+    connectDB(process.env.MONGODB_URl)
+    App.listen(PORT, () => console.log(`Server is running on port http://localhost:${PORT}...`))
+  } catch (error) {
+    console.log(error)
+  }
+}
 
-App.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`)
-})
+startServer()
