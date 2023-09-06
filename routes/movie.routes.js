@@ -6,7 +6,7 @@ const moviesRouter = Router()
 moviesRouter.get('/', MovieController.getAllMovies)
 moviesRouter.post('/', MovieController.createMovie)
 
-// moviesRouter.get('/:id', MovieController.getMovieById)
+moviesRouter.get('/:id', MovieController.getMovieById)
 // moviesRouter.delete('/:id', MovieController.deleteMovie)
 // moviesRouter.patch('/:id', MovieController.updatedMovie)
 

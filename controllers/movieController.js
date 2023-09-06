@@ -2,7 +2,7 @@ import Movie from '../database/mongodb/models/movieModel.js'
 import { validateMovie, validatePartialMovie } from '../schemas/movie.js'
 
 export class MovieController {
-  //
+  // Get All Movies
   static async getAllMovies (req, res) {
     try {
       const movies = await Movie.find().select('-__v')
@@ -12,13 +12,19 @@ export class MovieController {
     }
   }
 
-  // static async getMovieById (req, res) {
-  //   const { id } = req.params
-  //   const movie = await MovieModel.getById({ id })
-  //   if (!movie) return res.status(404).json({ message: 'Movie not found' })
-  //   res.json(movie)
-  // }
+  // Get Movie by ID
+  static async getMovieById (req, res) {
+    try {
+      const { id } = req.params
+      const movie = await Movie.findById(id).select('-__v')
+      if (!movie) throw new Error('Movie not found')
+      res.json(movie)
+    } catch (error) {
+      res.json({ message: error.message })
+    }
+  }
 
+  // Create Movie
   static async createMovie (req, res) {
     try {
       const movieResult = validateMovie(req.body)
@@ -43,13 +49,17 @@ export class MovieController {
   }
 
   // static async deleteMovie (req, res) {
-  //   const { id } = req.params
+  //   try {
+  //     const { id } = req.params
 
-  //   const isDeleted = await MovieModel.delete({ id })
+  //     const isDeleted = await MovieModel.delete({ id })
 
-  //   if (!isDeleted) return res.status(404).json({ message: 'Movie not found' })
+  //     if (!isDeleted) return res.status(404).json({ message: 'Movie not found' })
 
-  //   return res.status(200).json({ message: 'Movie deleted successfully' })
+  //     return res.status(200).json({ message: 'Movie deleted successfully' })
+  //   } catch (error) {
+
+  //   }
   // }
 
   // static async updatedMovie (req, res) {
