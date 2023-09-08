@@ -14,7 +14,7 @@ const movieSchema = z.object({
   }),
   genre: z.array(
     z.enum(['Action', 'Adventure', 'Comedy', 'Drama', 'Horror', 'Sci-Fi', 'Thriller', 'Fantasy',
-      'Terror', 'Crime', 'Mystery']),
+      'Terror', 'Crime', 'Mystery', 'History', 'Biography']),
     {
       required_error: 'Movie genre is required',
       invalid_type_error: 'Movie genre is invalid'

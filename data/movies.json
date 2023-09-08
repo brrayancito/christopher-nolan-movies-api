@@ -1,0 +1,132 @@
+[
+  {
+    "id": "dcdd0fad-a94c-4810-8acc-5f108d3b18c3",
+    "title": "Following",
+    "year": 1998,
+    "director": "Christopher Nolan",
+    "duration": 70,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/5/55/Following_film_poster.jpg",
+    "genre": ["Thriller", "Crime", "Mystery"],
+    "rate": 7.5
+  },
+  {
+    "id": "c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf",
+    "title": "Memento",
+    "year": 2000,
+    "director": "Christopher Nolan",
+    "duration": 113,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/c/c7/Memento_poster.jpg",
+    "genre": ["Mystery", "Thriller"],
+    "rate": 8.4
+  },
+  {
+    "id": "5ad1a235-0d9c-410a-b32b-220d91689a08",
+    "title": "Insomnia",
+    "year": 2002,
+    "director": "Christopher Nolan",
+    "duration": 118,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/7/7c/Insomnia2002Poster.jpg",
+    "genre": ["Thriller", "Drama", "Mystery"],
+    "rate": 7.2
+  },
+  {
+    "id": "241bf55d-b649-4109-af7c-0e6890ded3fc",
+    "title": "Batman Begins",
+    "year": 2005,
+    "director": "Christopher Nolan",
+    "duration": 140,
+    "poster": "https://upload.wikimedia.org/wikipedia/sco/a/af/Batman_Begins_Poster.jpg",
+    "genre": ["Crime", "Drama", "Action"],
+    "rate": 8.2
+  },
+  {
+    "id": "9e6106f0-848b-4810-a11a-3d832a5610f9",
+    "title": "The Prestige",
+    "year": 2006,
+    "director": "Christopher Nolan",
+    "duration": 130,
+    "poster": "https://m.media-amazon.com/images/I/51wILNNX2VL.jpg",
+    "genre": ["Drama", "Mystery", "Sci-Fi"],
+    "rate": 8.5
+  },
+  {
+    "id": "7e3fd5ab-60ff-4ae2-92b6-9597f0308d1",
+    "title": "The Dark Knight",
+    "year": 2008,
+    "director": "Christopher Nolan",
+    "duration": 152,
+    "poster": "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_SL1500_.jpg",
+    "genre": ["Action", "Crime", "Drama"],
+    "rate": 9
+  },
+  {
+    "id": "c906673b-3948-4402-ac7f-73ac3a9e3105",
+    "title": "Inception",
+    "year": 2010,
+    "director": "Christopher Nolan",
+    "duration": 148,
+    "poster": "https://m.media-amazon.com/images/I/71YcyvgPEHL._AC_SL1062_.jpg",
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "rate": 8.8
+  },
+  {
+    "id": "b6e03689-cccd-478e-8565-d92f40813b13",
+    "title": "The Dark Knight Rises",
+    "year": 2012,
+    "director": "Christopher Nolan",
+    "duration": 165,
+    "poster": "https://m.media-amazon.com/images/I/81Od-X1sKHL._AC_SL1500_.jpg",
+    "genre": ["Action", "Drama", "Thriller"],
+    "rate": 8.4
+  },
+  {
+    "id": "aa391090-b938-42eb-b520-86ea0aa3917b",
+    "title": "Man of Steel",
+    "year": 2013,
+    "director": "Christopher Nolan",
+    "duration": 143,
+    "poster": "https://m.media-amazon.com/images/I/61TISXNqC4L._AC_SL1007_.jpg",
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "rate": 7.1
+  },
+  {
+    "id": "2e6900e2-0b48-4fb6-ad48-09c7086e54fe",
+    "title": "Interstellar",
+    "year": 2014,
+    "director": "Christopher Nolan",
+    "duration": 169,
+    "poster": "https://m.media-amazon.com/images/I/71LNVGVpWYL._AC_SL1020_.jpg",
+    "genre": ["Sci-Fi", "Adventure", "Drama"],
+    "rate": 8.7
+  },
+  {
+    "id": "04986507-b3ed-442c-8ae7-4c5df804f896",
+    "title": "Dunkirk",
+    "year": 2017,
+    "director": "Christopher Nolan",
+    "duration": 106,
+    "poster": "https://m.media-amazon.com/images/I/71Ws7SxbmKL._AC_SL1111_.jpg",
+    "genre": ["Action", "Drama", "History"],
+    "rate": 7.8
+  },
+  {
+    "id": "7d2832f8-c70a-410e-8963-4c93bf36cc9c",
+    "title": "Tenet",
+    "year": 2020,
+    "director": "Christopher Nolan",
+    "duration": 150,
+    "poster": "https://m.media-amazon.com/images/I/91oMmAPaaeL._AC_SL1500_.jpg",
+    "genre": ["Action", "Thriller", "Sci-Fi"],
+    "rate": 7.3
+  },
+  {
+    "id": "ccf36f2e-8566-47f7-912d-9f4647250bc7",
+    "title": "Oppenheimer",
+    "year": 2023,
+    "director": "Christopher Nolan",
+    "duration": 180,
+    "poster": "https://m.media-amazon.com/images/I/71lqDylcvGL._AC_SL1500_.jpg",
+    "genre": ["Biography", "Drama", "History"],
+    "rate": 8.6
+  }
+]
