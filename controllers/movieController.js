@@ -41,7 +41,7 @@ export class MovieController {
         }
       })
     } catch (error) {
-      res.status(201).json({
+      res.status(404).json({
         status: 'fail',
         message: 'Something went wrong!'
       })
@@ -62,19 +62,23 @@ export class MovieController {
   //   }
   // }
 
-  // static async updatedMovie (req, res) {
-  //   const movieResult = validatePartialMovie(req.body)
-  //   if (movieResult.error) return res.status(400).json({ error: JSON.parse(movieResult.error.message) })
+  static async updatedMovie (req, res) {
+    try {
+      const movieResult = validatePartialMovie(req.body)
+      if (movieResult.error) throw new Error(movieResult.error.message)
 
-  //   const { id } = req.params
-  //   const updatedMovie = await MovieModel.update({ id, data: movieResult.data })
-  //   if (!updatedMovie) return res.status(404).json({ message: 'Movie not found' })
+      const { id } = req.params
+      const updatedMovie = await Movie.findByIdAndUpdate(id, movieResult.data, { new: true })
+      if (!updatedMovie) throw new Error('Movie not found')
 
-  //   return res.status(200).json({
-  //     message: 'Movie updated successfully',
-  //     data: {
-  //       updatedMovie
-  //     }
-  //   })
-  // }
+      return res.status(200).json({
+        message: 'Movie updated successfully',
+        data: {
+          updatedMovie
+        }
+      })
+    } catch (error) {
+      res.json(JSON.parse(error.message))
+    }
+  }
 }
