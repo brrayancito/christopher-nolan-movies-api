@@ -43,24 +43,29 @@ export class MovieController {
     } catch (error) {
       res.status(404).json({
         status: 'fail',
-        message: 'Something went wrong!'
+        message: error.message
       })
     }
   }
 
-  // static async deleteMovie (req, res) {
-  //   try {
-  //     const { id } = req.params
+  static async deleteMovie (req, res) {
+    try {
+      const { id } = req.params
 
-  //     const isDeleted = await MovieModel.delete({ id })
+      const deletedMovie = await Movie.findByIdAndDelete(id)
 
-  //     if (!isDeleted) return res.status(404).json({ message: 'Movie not found' })
+      if (deletedMovie) return res.status(404).json({ message: 'Movie not found' })
 
-  //     return res.status(200).json({ message: 'Movie deleted successfully' })
-  //   } catch (error) {
+      return res.status(200).json({
+        message: 'Movie deleted successfully',
+        deletedMovie: {
+          deletedMovie
+        }
+      })
+    } catch (error) {
 
-  //   }
-  // }
+    }
+  }
 
   static async updatedMovie (req, res) {
     try {
