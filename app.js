@@ -27,13 +27,23 @@ App.use(cors({
 }))
 
 // Routes
+
+// Home
 App.get('/', (req, res) => {
   res.json({
     message: 'Hello World'
   })
 })
 
-App.use('/movies', moviesRouter)
+// Movies
+App.use('/api', moviesRouter)
+
+// 404
+App.use('*', (req, res) => {
+  res.status(404).json({
+    message: 'This route does not exist'
+  })
+})
 
 async function startServer () {
   const PORT = process.env.PORT || 8080

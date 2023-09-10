@@ -67,6 +67,7 @@ export class MovieController {
     }
   }
 
+  // Update Movie
   static async updatedMovie (req, res) {
     try {
       const movieResult = validatePartialMovie(req.body)
@@ -82,6 +83,16 @@ export class MovieController {
           updatedMovie
         }
       })
+    } catch (error) {
+      res.json(JSON.parse(error.message))
+    }
+  }
+
+  // Get Top Five Movie
+  static async getTopFiveMovies (req, res) {
+    try {
+      const movies = await Movie.find().sort({ rate: -1 }).limit(5)
+      res.json(movies)
     } catch (error) {
       res.json(JSON.parse(error.message))
     }

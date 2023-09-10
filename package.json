@@ -1,16 +1,5 @@
 {
-  "name": "rest-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "type": "module",
-  "scripts": {
-    "start": "node app.js",
-    "dev": "node --watch app.js"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "cors": "2.8.5",
     "dotenv": "16.3.1",
@@ -18,10 +7,22 @@
     "mongoose": "7.5.0",
     "zod": "3.21.4"
   },
+  "description": "",
   "devDependencies": {
+    "nodemon": "3.0.1",
     "standard": "17.1.0"
   },
   "eslintConfig": {
     "extends": "standard"
-  }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "app.js",
+  "name": "rest-api",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "type": "module",
+  "version": "1.0.0"
 }
