@@ -21,6 +21,14 @@ const movieSchema = new mongoose.Schema({
     type: String,
     required: [true, 'A movie must have a poster']
   },
+  trailer: {
+    type: String,
+    required: [true, 'A movie must have a poster']
+  },
+  imdb: {
+    type: String,
+    required: [true, 'A movie must have a poster']
+  },
   genre: [],
   rate: {
     type: Number,

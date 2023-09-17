@@ -12,6 +12,14 @@ const movieSchema = z.object({
     message: 'Poster URL is invalid'
 
   }),
+  trailer: z.string().url({
+    message: 'Trailer URL is invalid'
+
+  }),
+  imdb: z.string().url({
+    message: 'IMDB URL is invalid'
+
+  }),
   genre: z.array(
     z.enum(['Action', 'Adventure', 'Comedy', 'Drama', 'Horror', 'Sci-Fi', 'Thriller', 'Fantasy',
       'Terror', 'Crime', 'Mystery', 'History', 'Biography']),
