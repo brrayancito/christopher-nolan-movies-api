@@ -4,6 +4,9 @@ const movieSchema = z.object({
   title: z.string({
     required_error: 'Movie title is required'
   }),
+  description: z.string({
+    required_error: 'Movie description is required'
+  }),
   year: z.number().int().min(1900).max(2024),
   director: z.string(),
   duration: z.number().int().positive(),
