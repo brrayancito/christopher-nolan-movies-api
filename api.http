@@ -1,14 +1,14 @@
 ### Get all movies
-GET http://localhost:5000/api/movies
+GET https://rest-api-u38s-dev.fl0.io/api/movies
 
 ### Get movie by ID
-GET http://localhost:5000/api/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+GET https://rest-api-u38s-dev.fl0.io/api/movies/<movie_id>
 
 ### Get movies by genre
-GET http://localhost:5000/api/movies?genre=Action
+GET https://rest-api-u38s-dev.fl0.io/api/movies?genre=Action
 
 ### Create a movie
-POST http://localhost:5000/api/movies
+POST https://rest-api-u38s-dev.fl0.io/api/movies
 Content-Type: application/json
 
 {
@@ -22,13 +22,13 @@ Content-Type: application/json
 }
 
 ### Delete movie by ID
-DELETE  http://localhost:5000/api/movies/1519b896-4a2c-4d46-beca-78e595c070f6
+DELETE  https://rest-api-u38s-dev.fl0.io/api/movies/<movie_id>
 Content-Type: application/json
 
 
 
 ### Update movie by ID
-PATCH http://localhost:5000/api/movies/cf247152-1f24-4011-9486-d39fe5bc5b99
+PATCH https://rest-api-u38s-dev.fl0.io/api/movies/<movie_id>
 Content-Type: application/json
 
 {
@@ -39,4 +39,4 @@ Content-Type: application/json
 ]
 }
 ### Get Top 5 Movies
-GET http://localhost:5000/api/top-5-movies
+GET https://rest-api-u38s-dev.fl0.io/api/top-5-movies
