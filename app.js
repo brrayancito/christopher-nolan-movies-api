@@ -31,7 +31,7 @@ App.use(cors({
 // Home
 App.get('/', (req, res) => {
   res.json({
-    message: 'Hello World'
+    message: 'Hello from the server 😊'
   })
 })
 
