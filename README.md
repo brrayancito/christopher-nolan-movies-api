@@ -39,7 +39,7 @@ Feel free to contribute or use this as a reference for your own projects! Enjoy 
 | `year`      | `number` | **Required**. Integer betweem 1900 and 2024|
 | `director`      | `string` | **Required**|
 | `poster`      | `url` | **Required**. A valid url to create movie|
-| `genre`      | `array` | **Required**. Array of opctions: Action, Adventure, Comedy, Drama,   Horror, Sci-Fi, Thriller, Fantasy, Terror, Crime, Mystery, History, Biography'|
+| `genre`      | `array` | **Required**. Array of options: Action, Adventure, Comedy, Drama,   Horror, Sci-Fi, Thriller, Fantasy, Terror, Crime, Mystery, History, Biography'|
 | `rate`      | `number` | **Required**. Min 0 - Max 10|
 
 #### Delete movie by ID
