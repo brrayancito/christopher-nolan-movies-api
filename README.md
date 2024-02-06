@@ -55,10 +55,17 @@ Feel free to contribute or use this as a reference for your own projects! Enjoy 
 #### Update movie by ID
 
 ```http
-  DELETE /api/movies/<movie_id>
+  PATCH  /api/movies/<movie_id>
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of movie to update |
+
+#### Get Top 5 Movies
+
+```http
+  GET  /api/top-5-movies
+```
+
 
