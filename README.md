@@ -5,7 +5,6 @@ This project is a efficient API developed using Node.js and  MongoDB as its data
 
 One of the key features of this API is its use of the Zod library for backend field validation. Zod is a TypeScript and JavaScript library for creating, parsing, and validating schemas. It’s used in this project to ensure the integrity of the data being handled by the API, providing an extra layer of security and reliability.
 
-Feel free to contribute or use this as a reference for your own projects! Enjoy coding!
 ## API Reference
 
 #### Get all movies
